@@ -1,0 +1,100 @@
+🛒 RoboShop Shell Scripting Project – 3-Tier Architecture
+
+----------------------------------------------------------------------
+📌 About the Project
+
+This repository contains end-to-end Shell scripts to automate the deployment and management of the RoboShop microservices application based on a 3-Tier Architecture model.
+
+The project focuses on real-world DevOps practices by using Bash scripting to install, configure, and manage frontend, backend services, and databases on Linux servers (AWS EC2).
+
+🏗️ Architecture Overview (3-Tier)
+
+The application is designed using a 3-Tier Architecture, which separates concerns for better scalability, security, and maintainability.
+---------------------------------------------------------------------
+
+1️⃣ Frontend Tier
+
+Technology: Nginx
+
+Serves static web content
+
+Acts as a reverse proxy
+
+Communicates with backend services via APIs
+
+2️⃣ Backend Tier (Microservices)
+
+Each backend service is deployed and managed using individual shell scripts:
+
+Catalogue – Product information service
+
+User – User authentication & profiles
+
+Cart – Shopping cart operations
+
+Shipping – Order shipment processing
+
+Payment – Payment transactions
+
+Services are managed using systemd service files
+
+3️⃣ Database / Messaging Tier
+
+MongoDB – Catalogue & User data
+
+Redis – Cart & session storage
+
+MySQL – Shipping data
+
+RabbitMQ – Message queue for async communication (Payment → Dispatch)
+
+-----------------------------------------------------------------
+
+📂 Repository Structure (Example)
+shell-roboshop/
+├── frontend.sh
+├── mongodb.sh
+├── catalogue.sh
+├── user.sh
+├── cart.sh
+├── redis.sh
+├── mysql.sh
+├── shipping.sh
+├── rabbitmq.sh
+├── payment.sh
+├── dispatch.sh
+├── *.service
+└── README.md
+----------------------------------------------------------------
+
+🛠️ Technologies Used
+
+-> Bash / Shell Scripting
+-> Linux (RHEL / Amazon Linux)
+-> AWS EC2
+-> Nginx
+-> MongoDB
+-> Redis
+-> MySQL
+-> RabbitMQ
+-> Systemd
+-----------------------------------------------------------------
+
+🎯 Key Learning Outcomes
+
+Writing production-ready shell scripts
+
+Understanding microservices deployment
+
+Implementing 3-Tier architecture
+
+Automating infrastructure tasks
+
+Debugging real-world Linux & service issues
+
+DevOps fundamentals using scripting
+-----------------------------------------------------------------
+
+📌 Note
+
+This project is created for learning and DevOps practice purposes, closely following real industry deployment scenarios.
