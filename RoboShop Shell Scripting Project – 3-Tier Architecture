@@ -6,6 +6,7 @@
 This repository contains end-to-end Shell scripts to automate the deployment and management of the RoboShop microservices application based on a 3-Tier Architecture model.
 
 The project focuses on real-world DevOps practices by using Bash scripting to install, configure, and manage frontend, backend services, and databases on Linux servers (AWS EC2).
+---------------------------------------------------------------------
 
 🏗️ Architecture Overview (3-Tier)
 
